@@ -117,8 +117,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "npm start --prefix client",
     "server": "npm run watch --prefix server",
+    "deploy": "npm run build --prefix client && npm start --prefix server",
     "dev": "concurrently -n 'server,client' -c 'green,red' \"npm run server\" \"npm run client\" "
-  },
+  }, 
   "keywords": [],
   "author": "",
   "license": "ISC"
